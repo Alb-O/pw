@@ -1,0 +1,23 @@
+{
+  "name": "pw-cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Thin wrapper around playwright/lib/cli/client/program",
+  "bin": {
+    "pw-cli": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "check": "tsc --noEmit --project tsconfig.json",
+    "help": "node dist/cli.js --help",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "playwright": "1.59.0-alpha-1771104257000"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.1",
+    "typescript": "^5.9.2"
+  }
+}
