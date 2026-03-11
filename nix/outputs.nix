@@ -5,6 +5,7 @@ let
 in
 {
   outputs = {
+    pw-core = shared.workspaceCli;
     pw-cli = shared.pwCli;
     pw-cli-built = shared.workspaceCli;
   };

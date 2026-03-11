@@ -10,6 +10,11 @@ The current goal is narrow:
 - preserve the upstream command surface such as `open`, `snapshot`, `click`,
   `type`, and `dblclick`
 
+The repo also exposes a reusable packaged runtime through devenv/Nix:
+
+- `pw-core`: built package root with `dist/` and bundled `node_modules`
+- `pw-cli`: runnable wrapper binary
+
 This is intentionally coupled to a specific Playwright package version. If the
 internal `playwright/lib/cli/client/program` path changes upstream, this repo
 will need to move with it.
