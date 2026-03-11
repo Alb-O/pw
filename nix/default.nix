@@ -1,8 +1,12 @@
-{ ... }:
+{ pkgs, ... }:
 
+let
+  shared = import ./shared.nix { inherit pkgs; };
+in
 {
-  imports = [
-    ./outputs.nix
-    ./shell.nix
-  ];
+  outputs = {
+    pw-core = shared.workspaceCli;
+    pw-cli = shared.pwCli;
+    pw-cli-built = shared.workspaceCli;
+  };
 }
