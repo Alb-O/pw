@@ -18,7 +18,7 @@ let
   };
 
   workspaceCli = pkgs.buildNpmPackage {
-    pname = "pw-cli";
+    pname = "pw";
     version = "0.1.0";
     src = workspaceSource;
     nodejs = node;

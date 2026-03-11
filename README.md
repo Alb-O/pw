@@ -1,4 +1,4 @@
-# pw-cli
+# pw
 
 Thin wrapper around Playwright's internal client CLI entrypoint,
 `playwright/lib/cli/client/program`.
