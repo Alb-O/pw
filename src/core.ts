@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { configurePlaywrightBrowserRuntime } from "./browser_runtime";
 
 const defaultBasePath = (): string => path.resolve(__dirname, "..");
 
@@ -108,6 +109,11 @@ const runPlaywrightClientProgram = (
 	binName: string,
 	basePath?: string,
 ): void => {
+	process.argv = [
+		process.argv[0],
+		process.argv[1],
+		...configurePlaywrightBrowserRuntime(process.argv.slice(2)),
+	];
 	patchPlaywrightClientHelpBinName(binName, basePath);
 	patchPlaywrightClientBanner(binName);
 	require(resolvePlaywrightClientProgramPath(basePath));
@@ -121,4 +127,3 @@ export {
 	resolvePlaywrightPackageRoot,
 	runPlaywrightClientProgram,
 };
-
