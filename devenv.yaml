@@ -11,17 +11,17 @@ inputs:
     inputs:
       nixpkgs:
         follows: nixpkgs
-  dvnv-instructions-composer:
-    url: github:Alb-O/dvnv-instructions-composer
+  poly-instructions-composer:
+    url: github:Alb-O/poly-instructions-composer
     flake: false
-  dvnv-docs-env:
-    url: github:Alb-O/dvnv-docs-env
+  poly-docs-env:
+    url: github:Alb-O/poly-docs-env
     flake: false
-  dvnv-local-inputs:
-    url: github:Alb-O/dvnv-local-inputs
+  poly-local-inputs:
+    url: github:Alb-O/poly-local-inputs
     flake: false
 imports:
-  - dvnv-instructions-composer
-  - dvnv-docs-env
-  - dvnv-local-inputs
+  - poly-instructions-composer
+  - poly-docs-env
+  - poly-local-inputs
 
