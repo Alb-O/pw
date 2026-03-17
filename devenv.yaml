@@ -17,10 +17,10 @@ inputs:
   poly-docs-env:
     url: github:Alb-O/poly-docs-env
     flake: false
-  poly-local-inputs:
-    url: github:Alb-O/poly-local-inputs
+  poly-bootstrap:
+    url: github:Alb-O/poly-bootstrap
     flake: false
 imports:
   - poly-instructions-composer
   - poly-docs-env
-  - poly-local-inputs
+  - poly-bootstrap
