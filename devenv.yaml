@@ -11,16 +11,3 @@ inputs:
     inputs:
       nixpkgs:
         follows: nixpkgs
-  poly-instructions-composer:
-    url: github:Alb-O/poly-instructions-composer
-    flake: false
-  poly-docs-env:
-    url: github:Alb-O/poly-docs-env
-    flake: false
-  poly-bootstrap:
-    url: github:Alb-O/poly-bootstrap
-    flake: false
-imports:
-  - poly-instructions-composer
-  - poly-docs-env
-  - poly-bootstrap
